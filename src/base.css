@@ -1,0 +1,18 @@
+.home__background {
+  background: url("../public/images/bg_header.png");
+  height: 100vh;
+}
+
+.message__image {
+  background: url("../public/images/Message.png");
+  height: 80vh;
+  margin-left: -200px;
+}
+
+.message__form {
+  background-color: #f99d1c;
+  width: 40%;
+  height: 60vh;
+  position: absolute;
+  right: 0;
+}
