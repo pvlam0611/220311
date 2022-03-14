@@ -2,15 +2,11 @@ import React from "react";
 import { travels } from "../../data/travel";
 import TravelItem from "../travel-item";
 
-const Travels = () => {
-  const data = travels;
-  // <ul>
-  // </ul>
+export default function Travels() {
+  const dataTravels = travels;
   return (
-    <ul>
-      <TravelItem data={data} />
-    </ul>
+    <>
+      <TravelItem data={dataTravels} />
+    </>
   );
-};
-
-export default Travels;
+}

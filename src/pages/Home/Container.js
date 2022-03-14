@@ -1,15 +1,19 @@
 import React from "react";
-import Navigations from "./components/navigation";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
-import Travels from "./components/travel";
-import "./base.css";
-import "./grid.css";
-import "./style.css";
+import Travels from "../../components/travel";
+import Offers from "../../components/offer";
+import Comments from "../../components/comment";
+import "../../styles/base.css";
+import "../../styles/grid.css";
+import "../../styles/style.css";
 
 export default function Container() {
   return (
     <>
+      <div className="home__background">
+        <h1> Discover</h1>
+        <h1>the world</h1>
+        <button>explore now...</button>
+      </div>
       <div>
         <h1>We have the best tours</h1>
         <p>
@@ -33,15 +37,25 @@ export default function Container() {
           </p>
           <button>BOOK NOW ...</button>
         </div>
+        <div>
+          <h1>THE BEST OFFERS WITH ROOMS</h1>
+          <div>
+            <Offers />
+          </div>
+        </div>
+        <div>
+          <h1>WHAT OUR CLIENTS SAY ABOUT US</h1>
+          <Comments />
+        </div>
       </div>
       <div className="message__image">
         <div className="message__form">
           <h1>GET IN TOUCH</h1>
-          <div>Name</div>
-          <div>E-mail</div>
-          <div>Subject</div>
-          <div>Message</div>
-          <input SEND MESSAGE />
+          <input type="text" placeholder="Name" />
+          <input type="text" placeholder="E-mail" />
+          <input type="text" placeholder="Subject" />
+          <input type="text" placeholder="Message" />
+          <button> SEND MESSAGE </button>
         </div>
       </div>
     </>

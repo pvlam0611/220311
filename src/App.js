@@ -1,9 +1,9 @@
-import "./base.css";
-import "./grid.css";
-import "./style.css";
-import Header from "./Header";
-import Footer from "./Footer";
-import Container from "./Container";
+import "./styles/base.css";
+import "./styles/grid.css";
+import "./styles/style.css";
+import Header from "./pages/Home/Header";
+import Footer from "./pages/Home/Footer";
+import Container from "./pages/Home/Container";
 
 function App() {
   return (

@@ -1,10 +1,11 @@
 import React from "react";
-import Navigations from "./components/navigation";
+import Navigations from "../../components/navigation";
+import Search from "../../components/Search";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
-import "./base.css";
-import "./grid.css";
-import "./style.css";
+import "../../styles/base.css";
+import "../../styles/grid.css";
+import "../../styles/style.css";
 
 export default function Header() {
   return (
@@ -18,11 +19,7 @@ export default function Header() {
           <Navigations />
           <FontAwesomeIcon icon={faMagnifyingGlass} />
           <br />
-          <input type="text" placeholder="Search..." />
-        </div>
-        <div className="home__background">
-          <h1> Discover</h1>
-          <h1>the world</h1>
+          <Search />
         </div>
       </div>
     </>

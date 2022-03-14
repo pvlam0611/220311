@@ -1,10 +1,10 @@
 .home__background {
-  background: url("../public/images/bg_header.png");
+  background: url("../../public/images/bg_header.png");
   height: 100vh;
 }
 
 .message__image {
-  background: url("../public/images/Message.png");
+  background: url("../../public/images/Message.png");
   height: 80vh;
   margin-left: -200px;
 }
